@@ -7,6 +7,7 @@
 
 # zsh
 !.zshrc
+!.zprofile
 
 # tmux
 !.tmux.conf
