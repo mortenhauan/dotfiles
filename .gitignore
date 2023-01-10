@@ -1,0 +1,15 @@
+# Ignore all files
+*
+!.gitignore
+
+# Readme
+!README.md
+
+# zsh
+!.zshrc
+
+# tmux
+!.tmux.conf
+
+#nvim
+!.config/nvim/init.vim
