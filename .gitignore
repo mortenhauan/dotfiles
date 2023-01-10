@@ -1,5 +1,5 @@
 # Ignore all files
-*
+/*
 !.gitignore
 
 # Readme
@@ -12,4 +12,6 @@
 !.tmux.conf
 
 #nvim
-!.config/nvim/init.vim
+.config/*
+!.config/
+!.config/nvim
