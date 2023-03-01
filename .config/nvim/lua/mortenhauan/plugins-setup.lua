@@ -82,7 +82,13 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		config = function()
+			require("lspsaga").setup({})
+		end,
+	})
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 
@@ -120,6 +126,9 @@ return packer.startup(function(use)
 			require("crates").setup()
 		end,
 	})
+
+	-- Editorconfig
+	use("gpanders/editorconfig.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

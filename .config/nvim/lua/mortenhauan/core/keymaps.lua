@@ -48,3 +48,13 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
 -- copilot
 keymap.set("n", "<leader>co", "<cmd>Copilot panel<cr>")
+
+-- format file
+keymap.set("n", "<leader>rf", "<cmd>lua vim.lsp.buf.format()<cr>")
+keymap.set("n", "<leader>rr", "<cmd>lua vim.lsp.buf.range_formatting()<cr>")
+
+-- move lines
+keymap.set("n", "<leader>aj", ":m .+1<CR>")
+keymap.set("n", "<leader>ak", ":m .-2<CR>")
+keymap.set("v", "<leader>aj", ":m .+1<CR>")
+keymap.set("v", "<leader>ak", ":m .-2<CR>")

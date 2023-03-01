@@ -16,3 +16,9 @@
 .config/*
 !.config/
 !.config/nvim
+
+# yabai
+!.config/yabai
+
+# skhd
+!.config/skhd

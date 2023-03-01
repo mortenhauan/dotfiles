@@ -14,8 +14,8 @@ neo_tree.setup({
 	sort_case_insensitive = false,
 	filesystem = {
 		filtered_items = {
-			visible = false,
-			hide_dotfiles = true,
+			visible = true,
+			hide_dotfiles = false,
 			hide_gitignored = false,
 			always_show = {
 				".gitignore",
